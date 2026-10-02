@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Manager Central — Política de Privacidade</title>
+<style>
+  :root {
+    --bg: #ffffff; --fg: #1a1a1a; --muted: #5b5b5b; --border: #e3e3e3; --accent: #0B1F3A;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg: #14161a; --fg: #ececeb; --muted: #a6a6a6; --border: #2c2f35; --accent: #9db4d9; }
+  }
+  :root[data-theme="dark"] { --bg: #14161a; --fg: #ececeb; --muted: #a6a6a6; --border: #2c2f35; --accent: #9db4d9; }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  body {
+    background: var(--bg); color: var(--fg); margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 24px 80px; }
+  h1 { font-size: 26px; margin-bottom: 4px; color: var(--accent); }
+  .sub { color: var(--muted); font-size: 14px; margin-bottom: 36px; }
+  h2 { font-size: 18px; margin-top: 36px; color: var(--accent); }
+  p, li { font-size: 15px; }
+  ul { padding-left: 20px; }
+  .box { border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px; margin: 20px 0; background: color-mix(in srgb, var(--accent) 6%, var(--bg)); }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Política de Privacidade — Manager Central</h1>
+  <p class="sub">Última atualização: setembro de 2026</p>
+
+  <p>O Manager Central é um sistema interno de gestão operacional, manutenção e facilities, desenvolvido para uso próprio de lojas e suas equipes de gestão. Esta página explica como os dados são tratados dentro do aplicativo.</p>
+
+  <h2>Como os dados são armazenados</h2>
+  <p>Todos os dados operacionais (colaboradores, tarefas, estoque, manutenção, ativos, agenda, prevenção de incêndio) ficam armazenados localmente no dispositivo de cada loja. O aplicativo funciona de forma offline e não depende de nenhum servidor externo para operar no dia a dia.</p>
+
+  <h2>Uso do Google Drive</h2>
+  <div class="box">
+    <p>O Manager Central oferece um recurso opcional de backup automático utilizando a conta do Google Drive da própria loja. Esse recurso usa o escopo mais restrito disponível do Google (<code>drive.file</code> no celular, <code>drive.readonly</code> no Gestor), o que significa que o aplicativo só enxerga e manipula os arquivos de backup que ele mesmo cria — nunca tem acesso ao restante dos arquivos pessoais da conta.</p>
+  </div>
+  <p>Quando ativado pelo usuário, o aplicativo:</p>
+  <ul>
+    <li>Envia uma cópia de segurança (backup) dos dados da loja para uma pasta própria no Google Drive da conta conectada;</li>
+    <li>Permite, opcionalmente, criptografar esse backup com uma senha escolhida pelo próprio usuário, que nunca é compartilhada com o desenvolvedor nem com o Google;</li>
+    <li>Permite consultar o status do backup e restaurá-lo, quando solicitado explicitamente pelo usuário.</li>
+  </ul>
+  <p>Nenhum dado é compartilhado com terceiros, vendido, ou usado para fins de publicidade.</p>
+
+  <h2>Dados pessoais de colaboradores</h2>
+  <p>O aplicativo pode armazenar localmente informações administrativas sobre colaboradores da loja (nome, cargo, escala de trabalho, registros de ausência) exclusivamente para fins de gestão operacional interna da própria empresa que utiliza o sistema.</p>
+
+  <h2>Contato</h2>
+  <p>Dúvidas sobre esta política podem ser enviadas para: <a href="mailto:managercentralbackup@gmail.com">managercentralbackup@gmail.com</a></p>
+</div>
+</body>
+</html>
